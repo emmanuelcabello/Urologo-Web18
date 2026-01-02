@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos Globales para el Dr. */
+:root {
+  --azul-urologo: #004a99;
+  --azul-oscuro: #003366;
+  --verde-whats: #25D366;
+  --blanco: #ffffff;
+  --gris-claro: #f4f7f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--gris-claro);
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

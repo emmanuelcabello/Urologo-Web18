@@ -1,0 +1,333 @@
+.hero {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #1e5799 0%, #1546a0 100%);
+  color: white;
+  margin-top: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+}
+
+.info-servicios {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  padding: 20px 25px;
+  color: #1a2a48;
+  margin: 25px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.info-servicios:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-servicios p {
+  margin: 10px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.info-servicios p:first-child {
+  color: #1546a0;
+  font-size: 1.2rem;
+}
+
+.info-servicios p:last-child {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.titulo-padecimientos {
+  color: #1546a0 !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  /* Extra Bold */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px !important;
+}
+
+.lista-padecimientos {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.lista-padecimientos li {
+  padding: 8px 0 8px 25px;
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.lista-padecimientos li:before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  color: #1546a0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.pregunta-dudas {
+  margin-top: 20px !important;
+  margin-bottom: 12px !important;
+  font-size: 1.1rem !important;
+  color: #2c3e50 !important;
+  font-weight: 700 !important;
+}
+
+.btn-dudas {
+  display: inline-block;
+  background: linear-gradient(to right, #25d366, #128c7e);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-dudas:hover {
+  background: linear-gradient(to right, #128c7e, #0d6e5e);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  transform: translateY(-2px);
+}
+
+.content-wrapper {
+  max-width: 900px;
+  /* Limit width */
+  margin: 0 auto;
+  /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center children */
+}
+
+.hero-text {
+  text-align: center;
+  /* Center text */
+  margin-bottom: 30px;
+}
+
+.card-white {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 25px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Take full width of centered container */
+  max-width: 600px;
+  /* Limit cards width */
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  /* Keep lists left-aligned but centered as a block */
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.price-card h3 {
+  font-size: 2.5rem;
+  /* Bigger price */
+  font-weight: 800;
+  margin: 5px 0;
+  color: #1546a0;
+}
+
+.icon-plus {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #cbd5e0;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.btn-main {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  border: none;
+  padding: 20px 50px;
+  /* Bigger button */
+  border-radius: 50px;
+  color: white;
+  font-weight: 800;
+  /* Extra bold */
+  text-transform: uppercase;
+  /* More commanding */
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255, 95, 109, 0.5);
+  /* Float effect */
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 95, 109, 0.6);
+}
+
+.footer-hero {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.highlight {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffde00;
+  /* Yellow highlight */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.consultorios {
+  padding: 40px 20px;
+  background-color: #1a2a48;
+  color: white;
+  text-align: center;
+}
+
+.sucursal-card {
+  border: 2px solid #00c4cc;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  /* Centered margin */
+  background: rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  /* Limit card width on large screens */
+}
+
+.sucursal-header h3 {
+  color: #00c4cc;
+  font-size: 1.5rem;
+  /* Larger title */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.precio-consulta {
+  color: #00c4cc;
+  font-weight: 800;
+  font-size: 1.2rem;
+  /* Larger */
+  margin-top: 8px;
+}
+
+.btn-agenda {
+  background-color: #ffde00;
+  color: #333;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-agenda:hover {
+  background-color: #ffd000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 222, 0, 0.4);
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  background: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.15);
+  background-color: #128c7e;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-float img {
+  width: 45px;
+  height: 45px;
+}
