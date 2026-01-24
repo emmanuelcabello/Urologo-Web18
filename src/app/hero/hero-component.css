@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .hero {
   padding: 40px 20px;
   background: linear-gradient(180deg, #1e5799 0%, #1546a0 100%);
@@ -127,6 +139,23 @@
   text-align: center;
   /* Center text */
   margin-bottom: 30px;
+}
+
+.doctor-image-container {
+  width: 150px;
+  /* Adjust this value to change image size */
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-white {
@@ -330,4 +359,79 @@
 .whatsapp-float img {
   width: 45px;
   height: 45px;
+}
+
+/* ROBUST MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px 10px;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+  }
+
+  .content-wrapper {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    /* Remove extra padding to maximize space */
+  }
+
+  .hero-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .card-white,
+  .info-servicios,
+  .sucursal-card {
+    width: 95% !important;
+    /* Slight gap on sides */
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    /* Smaller title */
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+
+  .subtitle,
+  .info-servicios p,
+  .lista-padecimientos li {
+    font-size: 1rem;
+    /* Readable but smaller body text */
+  }
+
+  .lista-padecimientos,
+  .service-list {
+    padding-left: 5px;
+    /* Less indentation */
+  }
+
+  .btn-main,
+  .btn-agenda,
+  .btn-dudas {
+    width: 100%;
+    /* Full width buttons */
+    font-size: 1.1rem;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .map-container iframe {
+    height: 200px;
+    /* Smaller map height on mobile */
+  }
 }
