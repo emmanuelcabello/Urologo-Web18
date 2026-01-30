@@ -27,7 +27,7 @@ export class HeroComponent {
   ];
 
   agendarCita() {
-    const msg = encodeURIComponent(`Hola ${this.doctorName}, me interesa agendar una cita.`);
+    const msg = encodeURIComponent('Hola doctor Damian Landa, deseo agendar una cita');
     window.open(`https://wa.me/52${this.telefono}?text=${msg}`, '_blank');
   }
 }
